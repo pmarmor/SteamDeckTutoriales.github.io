@@ -1,0 +1,19 @@
+#titulo{
+    font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
+    color: white;
+    background-color: rgb(28, 28, 28);
+    padding: 1px;
+    overflow: auto;
+    display: block;
+}
+#imagenTitulo{
+ float:left;
+}
+body{
+   margin: 0;
+}
+#textoCabecera{
+text-align:justify
+}
+
+  
