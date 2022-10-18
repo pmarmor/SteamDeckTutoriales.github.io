@@ -5,15 +5,16 @@
     padding: 1px;
     overflow: auto;
     display: block;
+    text-align:center;
 }
 #imagenTitulo{
  float:left;
+
+    margin-right: -150px;
 }
 body{
    margin: 0;
 }
-#textoCabecera{
-text-align:justify
-}
+
 
   
