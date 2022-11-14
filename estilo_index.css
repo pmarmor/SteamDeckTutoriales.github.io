@@ -1,4 +1,4 @@
-#titulo{
+header{
     font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
     color: white;
     background-color: rgb(28, 28, 28);
@@ -9,8 +9,8 @@
 }
 #imagenTitulo{
  float:left;
-
-    margin-right: -150px;
+margin-left: 40;
+    margin-right: -190px;
 }
 body{
    margin: 0;
