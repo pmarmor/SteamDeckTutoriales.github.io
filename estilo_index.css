@@ -1,10 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 header{
     font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
     color: white;
     background-color: rgb(36, 36, 36);
-    padding: 1px;
     overflow: auto;
-    display: block;
     text-align:center;
 }
 #imagenTitulo{
@@ -18,22 +20,41 @@ margin-left: 40px;
 body{
    margin: 0;
 }
-nav{
+nav {
+    width: 10%;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(255, 40, 40);
+    border-radius: 5px;
     overflow: hidden;
-    background-color: rgb(255, 80, 80);
-    height: 100px;
-}
-div{
-    height: 100px;
-    float: left;
-    color: #f2f2f2;
+    background-color: rgb(255, 97, 97);
+
+  }
+  nav ul{
+    list-style-type: none;
+  display: flex;
+  
+  }
+  nav li {
+     color: #f2f2f2;
     text-align: center;
-    padding: 19px 16px;
-    text-decoration: none;
+    padding: 16px 5%;
     font-size: 17px;
-    
-}
-nav div:hover {
+    margin: auto;
+    margin-top: 0%;
+  }
+  
+ nav li:hover {
+    border-radius: 5px;
+    color: red;
     background-color: #ddd;
-    color: black;
+  }
+  nav li:last-child {
+    margin-right: 0;
+
+  }
+  nav li:first-child {
+    margin-left: 0;
   }
