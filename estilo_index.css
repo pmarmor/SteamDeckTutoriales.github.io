@@ -12,10 +12,11 @@ header {
   border-bottom: solid rgb(247, 166, 16) 5px;
   position: fixed;
   top: 0;
+
   width: 100%
 }
 
-header+#principal {
+header + #principal {
   margin-top: 250px;
 }
 
@@ -91,6 +92,7 @@ nav li:first-child {
   border: solid whitesmoke;
   background-color: whitesmoke;
   border-radius: 5px;
+  
 }
 
 #principal section img {
@@ -102,7 +104,7 @@ nav li:first-child {
 
 #principal section {
   box-shadow: 0px 0px 7px;
-  
+  overflow: auto;
   width: 100%;
   border: solid whitesmoke;
   border-radius: 5px;
@@ -114,6 +116,7 @@ nav li:first-child {
 #principal a {
   display: flex;
   text-decoration: none;
+  color: black;
   width:75%;margin: 4% auto;
 }
 
