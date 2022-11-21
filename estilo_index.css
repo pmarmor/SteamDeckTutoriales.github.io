@@ -19,7 +19,9 @@ header {
 header + #principal {
   margin-top: 250px;
 }
-
+a{
+  text-decoration: none;
+}
 #imagenTitulo {
   float: left;
   margin-top: 20px;
@@ -49,7 +51,7 @@ nav {
   overflow: hidden;
   background-color: rgb(255, 189, 65);
   box-shadow: 0px 0px 20px red;
-
+  text-shadow: 0 0 3px black;
 
 }
 
@@ -100,6 +102,7 @@ nav li:first-child {
   border: solid whitesmoke;
   border-radius: 5px;
   box-shadow: 0 0 7px;
+  float: left;
 }
 
 #principal section {
@@ -108,8 +111,7 @@ nav li:first-child {
   width: 100%;
   border: solid whitesmoke;
   border-radius: 5px;
-  padding: 15px;
-  display: flex;
+  padding: 15px;;
   
 }
 
