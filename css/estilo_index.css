@@ -112,7 +112,7 @@ nav li:first-child {
   width: 100%;
   border: solid whitesmoke;
   border-radius: 5px;
-  padding: 15px;;
+  padding: 5%;
   
 }
 
@@ -129,6 +129,6 @@ a:visited {
 }
 
 #principal section h1 {
-  font-size: 45px;
+  font-size: 2.3vw;
   text-decoration: underline;
 }
