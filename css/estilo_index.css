@@ -17,7 +17,10 @@ header {
   width: 100%;
   height: auto;
 }
-
+#titulo{
+  display: flex;
+  justify-content: space-evenly;
+}
 a{
   text-decoration: none;
 }
@@ -38,6 +41,9 @@ html, body {
 body {
   position: relative;
   background-color: rgb(161, 161, 161);
+}
+#tituloDiv img{
+  display: none;
 }
 nav {
   width: fit-content;
@@ -124,10 +130,6 @@ a:visited {
   text-decoration: underline;
 }
 
-
-
-
-
 @media screen and (max-width: 601px) {
   header img {
     width:75%;
@@ -144,18 +146,22 @@ a:visited {
   #imagenTitulo2{
      padding-bottom: 5%;
   }
-
-  nav li {
-    font-size: smaller;
-    padding: 3vw;
-  }
-  
+ 
 }
-@media screen and (max-width: 400px) {
-  header{
-    display: block;
+@media screen and (max-width: 500px) {
+  #tituloDiv img{
+    width: 55px;
+    margin: 0 20px;
+    display: inline;
   }
-  header img{
+  #tituloDiv img:last-child{
+    transform: rotate(180deg);
+  }
+  #tituloDiv{
+    display: flex;
+    align-items: center;
+  }
+   #imagenTitulo, #imagenTitulo2{
     display: none;
   }
   nav{
@@ -165,8 +171,10 @@ a:visited {
     margin: 10px auto;
   }
   nav li {
-    font-size:larger;
     padding: 3vw;
+  }
+  .headerBR{
+    display: none;
   }
 }
 
