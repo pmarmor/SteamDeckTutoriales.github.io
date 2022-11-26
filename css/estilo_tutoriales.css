@@ -33,10 +33,14 @@
     margin-left: -450px;
     transform: rotate(180deg);
   }
-  
-  body {
-   background-color: rgb(161, 161, 161);
+  html, body {
+    overflow-x: hidden;
   }
+  body {
+    position: relative;
+    background-color: rgb(161, 161, 161);
+  }
+
   
   nav {
     width: fit-content;
