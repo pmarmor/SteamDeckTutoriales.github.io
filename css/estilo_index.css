@@ -32,7 +32,8 @@ header + #principal {
 }
 #imagenTitulo2 {
   margin-top: 20px;
-  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 html, body {
@@ -155,7 +156,8 @@ a:visited {
     display: inline;
   }
   #tituloDiv img:last-child{
-    transform: rotate(180deg);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
   #tituloDiv{
     display: flex;
