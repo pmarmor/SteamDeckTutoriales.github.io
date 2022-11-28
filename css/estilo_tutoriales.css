@@ -156,10 +156,6 @@ a:visited {
     margin: 0 20px;
     display: inline;
   }
-  #tituloDiv img:last-child{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
   #tituloDiv{
     display: flex;
     align-items: center;
