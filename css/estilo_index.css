@@ -114,15 +114,18 @@ nav li:hover {
  
   background: linear-gradient(0deg, rgba(255,23,203,1) 20%, rgb(255, 106, 223) 76%);
   margin-top: 20px;
-  padding: 10px;
+  padding: 10px ;
+  text-align: center;
+  font-size: 1.4vw;
   width: 25%;
-  height: 40px;
+
   margin-left: auto;
   transition: 0.15s;
 }
 
 .verMas:hover{
-  font-size: 14px;
+  font-size: 1.5vw;
+
   font-weight: bold;
   background: rgb(255,0,0);
 background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
