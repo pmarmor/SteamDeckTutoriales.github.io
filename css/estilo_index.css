@@ -16,6 +16,7 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: auto;
+  z-index: 2;
 }
 header h1{
   margin-top: 20px;
@@ -175,11 +176,12 @@ grid-row-gap: 0px;
   font-size: 1.2vw;
   font-weight: bold;
   background: rgb(255,0,0);
-background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
+  background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
   width: 40%;
   transition: 0.15s ease-out; 
   transform:scaleY(1.1); 
   transform-origin:bottom; 
+  z-index: 1;
 
 }
 
@@ -254,7 +256,7 @@ background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
     font-weight: bold;
     width: 40%;
   }
-  
+
 }
 
   
