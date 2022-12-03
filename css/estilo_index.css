@@ -110,31 +110,7 @@ nav li:hover {
 
  
 }
-.verMas{
- 
-  background: linear-gradient(0deg, rgba(255,23,203,1) 20%, rgb(255, 106, 223) 76%);
-  margin-top: 20px;
-  padding: 8px ;
-  text-align: center;
-  font-size: 1.4vw;
-  width: 25%;
 
-  margin-left: auto;
-  transition: 0.15s;
-}
-
-.verMas:hover{
-  font-size: 1.5vw;
-
-  font-weight: bold;
-  background: rgb(255,0,0);
-background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
-  width: 26%;
-  transition: 0.15s ease-out; 
-  transform:scaleY(1.1); 
-  transform-origin:bottom; 
-
-}
 
 /*
 *
@@ -148,6 +124,11 @@ PRINCIPAL
   width: 90%;
   border-radius: 5px;
   box-shadow: 0 0 15px;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 #principal div {
   justify-content: space-around;
@@ -155,7 +136,8 @@ PRINCIPAL
 }
 
 #principal section{
-  width: 40%;
+  margin: auto;
+  width: 60%;
   text-align: justify;
   display: flex;
   justify-content: center;
@@ -174,7 +156,32 @@ PRINCIPAL
   border-radius: 5px;
   
 }
+.verMas{
+ 
+  background: linear-gradient(0deg, rgba(255,23,203,1) 20%, rgb(255, 106, 223) 76%);
+  margin-top: 20px;
+  padding: 8px ;
+  text-align: center;
+  font-size: 1vw;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  transition: 0.15s;
+  border: solid black 2px;
+}
 
+.verMas:hover{
+  font-size: 1.2vw;
+  font-weight: bold;
+  background: rgb(255,0,0);
+background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
+  width: 40%;
+  transition: 0.15s ease-out; 
+  transform:scaleY(1.1); 
+  transform-origin:bottom; 
+
+}
 
 /*
 *
@@ -188,6 +195,12 @@ PRINCIPAL
   #principal {
     width: 100%;
     border-radius: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #principal section{
+    width: 80%;
   }
 
   #tituloDiv img{
@@ -211,6 +224,7 @@ PRINCIPAL
 
   #tituloDiv{
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -228,6 +242,17 @@ PRINCIPAL
   }
   .headerBR{
     display: none;
+  }
+  .verMas{
+    font-size: 2vw;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .verMas:hover{
+    font-size: 2.5vw;
+    font-weight: bold;
+    width: 40%;
   }
 }
 
