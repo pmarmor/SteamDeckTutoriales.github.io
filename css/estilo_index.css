@@ -37,20 +37,40 @@ margin-bottom: -15px;
 a{
   text-decoration: none;
 }
+
+/*
+*
+* IFRAME Y BOQUE DE AL LADO
+*
+*/
 header + #paginaEnDesarrollo {
   margin-top: 200px;
 }
 #paginaEnDesarrollo{
-  border: solid whitesmoke;
-  background-color: whitesmoke;
+
   margin: auto;
   width: 90%;
   border-radius: 5px;
-  box-shadow: 0 0 15px;
   text-align: center;
   padding: 20px;
   margin-bottom: 20px;
   font-size: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#paginaEnDesarrollo section{ /*iframe*/
+  border: solid goldenrod 3px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px goldenrod;
+}
+#paginaEnDesarrollo section:last-child{ /*bloque de al lado*/
+  background-color: whitesmoke;
+  width: 350px;
+  
+}
+.twitter-timeline{ /*iframe*/
+
 }
 #imagenTitulo {
   margin-top: 20px;
@@ -163,8 +183,8 @@ grid-row-gap: 0px;
   margin-top: 20px;
   padding: 8px ;
   text-align: center;
-  font-size: 1vw;
-  width: 35%;
+  font-size: 0.75vw;
+  width: 25%;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -173,11 +193,11 @@ grid-row-gap: 0px;
 }
 
 .verMas:hover{
-  font-size: 1.2vw;
+  font-size: 0.8vw;
   font-weight: bold;
   background: rgb(255,0,0);
   background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
-  width: 40%;
+  width: 28%;
   transition: 0.15s ease-out; 
   transform:scaleY(1.1); 
   transform-origin:bottom; 
@@ -246,15 +266,20 @@ grid-row-gap: 0px;
     display: none;
   }
   .verMas{
-    font-size: 2vw;
-    width: 35%;
+    transition: 0s;
+    font-size: 1.5vw;
+    width: 25%;
     display: flex;
     justify-content: center;
   }
   .verMas:hover{
-    font-size: 2.5vw;
+    transition: 0s;
+    transform:scaleY(1);
+    font-size: 1.5vw;
+    width: 25%;
+    display: flex;
     font-weight: bold;
-    width: 40%;
+    justify-content: center;
   }
 
 }
