@@ -88,9 +88,9 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray;
-  border: solid 2px;
-  border-radius:20px;
+  background: rgb(158, 17, 116);
+  border: solid orange 4px;
+  border-radius:8px;
 
 }
 @media screen and (max-width: 1280px) {
