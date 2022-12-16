@@ -80,7 +80,6 @@ header + #paginaEnDesarrollo {
 
 body {
   background: linear-gradient(0deg, rgba(66,1,63,1) 10%, rgba(199,0,199,1) 100%);
-  overflow: overlay;
 }
 #tdiv1,#tdiv2{
   display: none;
