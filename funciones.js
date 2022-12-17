@@ -1,9 +1,10 @@
 "use strict"
-let crono=setInterval(cronometro,4000)
+let crono=setInterval(cronometro,4000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
+//la función cambiaImagenSlider
 
 function cambiaImagenSlider(boton) {
-    clearInterval(crono)
-    crono=setInterval(cronometro,4000)
+    clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
+    crono=setInterval(cronometro,4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     let img = getImgPath()
     let imagenes = ['url(img/sp2.png)','url(img/DeckLogoGold.png)','url(img/DeckLogoMagenta.png)'];
     let colores = ["rgba(0, 102, 255, 0.932)","rgba(255, 0, 0, 0.7)","rgba(255, 102, 0, 0.932)"];
@@ -31,8 +32,6 @@ function cambiaImagenSlider(boton) {
         document.getElementById("content").style.backgroundColor = colores[i - 1]
     }
     if(typeof boton.id !="undefined"){
-        console.log(boton.id)
-        console.log("entra")
         clearInterval(crono)
         crono=setInterval(cronometro,8000)
     }
@@ -47,12 +46,8 @@ function getImgPath() {
 
 
  function cronometro() {
-    console.log("un segundo pasa")
     let boton="crono";
     cambiaImagenSlider(boton);
-  /* if(segundo==-1){
-    clearInterval(crono);
-    document.getElementById("texto").innerHTML = 'Tu tiempo ha terminado';
-   }*/
+
 
  } 
