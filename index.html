@@ -11,9 +11,8 @@
 <meta name="description" content="Noticias, artículos y noticias para Steam Deck en español.">
 <link rel="stylesheet" href="css/estilo_index.css">
 </head>
-
 <body>
-    <header class="titulo">
+    <header class="titulo" id="titulo">
         
             <img class="imagenTitulo" src="img/DeckLogoMagenta.png" alt="Steam Deck Logo" width="140">
         <section>
@@ -45,13 +44,14 @@
             <img class="imagenTitulo2" src="img/DeckLogoMagenta.png" alt="Steam Deck Logo" width="140">
     </header>
  
-        <section id="slider"><div class="content">Bienvenidos a Deck Sp</div></section>
-        <script>
-            document.getElementById("slider").style.backgroundImage="url(img/DeckLogoMagenta.png)";
-            document.getElementById("slider").style.backgroundRepeat="no-repeat";
-            document.getElementById("slider").style.backgroundPosition="center center";
-        </script>
-   
+        <section id="slider">
+            <div><br></div>
+            <div class="flechas">
+                <img id="flechaIzquierda" src="img/leftArrow.png" alt="" onclick="cambiaImagenSlider(this)">
+                <img id="flechaDerecha" src="img/leftArrow.png" alt="" style="-webkit-transform: scaleX(-1);
+                 transform: scaleX(-1);" onclick="cambiaImagenSlider(this)"></div>
+            <div class="content" id="content">Bienvenidos a Deck Sp</div></section>
+
     <section class="principal">
        
            
@@ -68,8 +68,7 @@
             <img src="img/Bienvenida/deckSpBanner.png" width="" height="">       
                 <h1>Dock oficial ya disponible</h1>
                 <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
-                    disponible
-                    el dock oficial de Valve. El dock costará unos</p>
+                    disponible el dock oficial de Valve. El dock costará unos</p>
         </section>
     
            
@@ -106,7 +105,7 @@
 
     <footer>pie de pagina</footer>
 </body>
-
+<script src="funciones.js"></script>
 </html>
 <!--/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
