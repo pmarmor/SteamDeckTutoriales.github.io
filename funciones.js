@@ -1,19 +1,18 @@
 "use strict"
 function cambiaImagenSlider(boton) {
-    let img = getImgRelativePath()
-    img = img.trim()
+    let img = getImgPath()
     let imagenes = ['url(img/sp2.png)','url(img/DeckLogoGold.png)','url(img/DeckLogoMagenta.png)'];
     let colores = ["rgba(0, 102, 255, 0.932)","rgba(255, 0, 0, 0.7)","rgba(255, 102, 0, 0.932)"];
     let i = 0;
     imagenes.forEach(elemento => {
-        if (elemento === img) {
-            console.log("encontrada");
+        let rutaRelativa=elemento
+        rutaRelativa=rutaRelativa.slice(4)
+        rutaRelativa=rutaRelativa.slice(0,-1)
+        if (img.includes(rutaRelativa)) {
             i = imagenes.indexOf(elemento)
         }
     });
     if (boton.id == "flechaDerecha") {
-        console.log(imagenes.length)
-        console.log(i)
         if (i >= imagenes.length - 1) {
             i = -1
         }
@@ -30,12 +29,9 @@ function cambiaImagenSlider(boton) {
 }
  
 
-function getImgRelativePath() {
+function getImgPath() {
     let img = document.getElementById('slider');
     let styles = window.getComputedStyle(img);
     img = styles.backgroundImage;
-    img = img.slice(27)
-    img = img.slice(0, -2)
-    img = "url(" + img + ")";
     return img
 }
