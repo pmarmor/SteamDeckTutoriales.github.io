@@ -28,7 +28,7 @@ function cambiaImagenSlider(boton) {
         document.getElementById("content").style.backgroundColor = colores[i - 1]
     }
 }
-
+ 
 
 function getImgRelativePath() {
     let img = document.getElementById('slider');
