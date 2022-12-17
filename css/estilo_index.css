@@ -22,15 +22,15 @@ header h1{
   margin-top: 20px;
   margin-bottom: -20px;
 }
-#prueba{
+.spResponsive{
   display: flex;
   justify-content: center;
 }
-#prueba img{
+.spResponsive img{
 margin: 15px 8px;
 margin-bottom: -15px;
 }
-#titulo{
+.titulo{
   display: flex;
   justify-content: space-evenly;
 }
@@ -40,13 +40,13 @@ a{
 
 /*
 *
-* IFRAME Y BOQUE DE AL LADO
+* Slider
 *
 */
-header + #paginaEnDesarrollo {
+header + .paginaEnDesarrollo {
   margin-top: 200px;
 }
-#paginaEnDesarrollo{
+.paginaEnDesarrollo{
 
   margin: auto;
   width: 90%;
@@ -59,7 +59,7 @@ header + #paginaEnDesarrollo {
   justify-content: center;
   gap: 30px;
 }
-#paginaEnDesarrollo section{ 
+.paginaEnDesarrollo section{ 
   border: solid goldenrod 3px;
   border-radius: 15px;
   box-shadow: 0 0 15px goldenrod;
@@ -67,11 +67,21 @@ header + #paginaEnDesarrollo {
   width: 350px;
 }
 
+#slider{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
-#imagenTitulo {
+}
+.content{
+  width: 100%;
+  height: 25%;
+  background-color: blue;
+}
+.imagenTitulo {
   margin-top: 20px;
 }
-#imagenTitulo2 {
+.imagenTitulo2 {
   margin-top: 20px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -79,12 +89,13 @@ header + #paginaEnDesarrollo {
 
 
 body {
-  background: linear-gradient(0deg, rgba(66,1,63,1) 10%, rgba(199,0,199,1) 100%);
+background: rgb(156,0,148);
+background: linear-gradient(0deg, rgb(206, 0, 195) 10%, rgb(255, 101, 198) 100%);
 }
-#tdiv1,#tdiv2{
+.tdiv1,.tdiv2{
   display: none;
 }
-#logo{
+.logo{
   display: inline;
 }
 nav {
@@ -131,7 +142,7 @@ nav li:hover {
 PRINCIPAL
 *
 */
-#principal{
+.principal{
   border: solid orange 3px;
   background-color: whitesmoke;
   margin: auto;
@@ -144,12 +155,12 @@ grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
-#principal div {
+.principal div {
   justify-content: space-around;
   display: flex;
 }
 
-#principal section{
+.principal section{
   margin: auto;
   width: 60%;
   text-align: justify;
@@ -159,11 +170,11 @@ grid-row-gap: 0px;
   flex-direction: column;
   padding: 15px;
 }
-#principal section h1{
+.principal section h1{
   font-size: 25px;
   text-align: center;
 }
-#principal img{
+.principal img{
   margin: 15px 0;
   width: 100%;
   border: solid rgb(255, 189, 65) 5px;
@@ -214,7 +225,7 @@ grid-row-gap: 0px;
     position: relative;
     background-color: rgb(161, 161, 161);
   }
-  #principal {
+ .principal {
     border-top: solid orange 3px; border-right: none;border-left: none; border-bottom: orange;
     width: 100%;
     border-radius: 0px;
@@ -222,11 +233,11 @@ grid-row-gap: 0px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  #principal section{
+  .principal section{
     width: 80%;
   }
 
-  #tituloDiv img{
+.tituloDiv img{
     width: 55px;
     margin: 0 10px;
     display: inline;
@@ -234,24 +245,24 @@ grid-row-gap: 0px;
   header h1{
     margin: 0;
   }
-#prueba img{
+.spResponsive img{
   height: 30px;
   width: 30px;
 }
-#prueba img:first-child{
+.spResponsive img:first-child{
   margin-right: 5px;
 }
-#prueba img:last-child{
+.spResponsive img:last-child{
   margin-left: 5px;
 }
 
-  #tituloDiv{
+  .tituloDiv{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-   #imagenTitulo, #imagenTitulo2{
+   .imagenTitulo, .imagenTitulo2{
     display: none;
   }
   nav{
