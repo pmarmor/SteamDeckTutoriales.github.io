@@ -20,6 +20,7 @@ header {
   height: auto;
   z-index: 2; 
 }
+
 header h1{
   margin-top: 20px;
   margin-bottom: -20px;
@@ -65,21 +66,31 @@ a{
   transition: 0.4s;
   background-position: center center;
 }
-
+#slider a{
+  font-weight: bold;
+  font-family: FjallaOne;
+  font-size:3vw;
+  padding:0 0 0 5px;
+  color: unset;
+  height: 30%;
+  border-radius: 0 0 12px 12px;
+  background-color: rgba(255, 102, 0, 0.932);
+  transition: 0.4s;
+}
 .content{
   width: 100%;
-  height: 30%;
   transition: 0.4s;
-  background-color: rgba(255, 102, 0, 0.932);
   border-radius: 0 0 12px 12px;
   overflow: hidden;
 }
+
 .flechas{
   display: flex;
   justify-content: space-between;
 }
 .flechas img{
-  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.4s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
 margin:0 2px;
   background-color: rgba(141, 141, 141, 0.836);
@@ -101,6 +112,7 @@ margin:0 2px;
 
 
 body {
+  font-family: Archivo;
   background: linear-gradient(0deg, rgba(66,1,63,1) 10%, rgba(199,0,199,1) 100%);
 }
 .tdiv1,.tdiv2{
@@ -183,6 +195,7 @@ grid-row-gap: 0px;
 }
 .principal section h1{
   font-size: 25px;
+  font-family: SecularOne;
   text-align: center;
 }
 .principal img{
@@ -227,9 +240,7 @@ grid-row-gap: 0px;
 *
 *
 */
-@media screen and (max-width: 1280px) {
 
-}
 
 @media screen and (max-width: 600px) {
   html, body {
@@ -319,4 +330,17 @@ grid-row-gap: 0px;
 
 }
 
-  
+@font-face {
+  font-family: SecularOne;
+  src: url(../fuentes/SecularOne-Regular.ttf);
+}
+@font-face {
+  font-family: FjallaOne;
+  src: url(../fuentes/FjallaOne-Regular.ttf);
+}
+@font-face {
+  font-family: Archivo;
+  src: url(../fuentes/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+
