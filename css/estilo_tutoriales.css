@@ -11,7 +11,7 @@ header {
   color: white;
   background-color: rgb(36, 36, 36);
   text-align: center;
-  border-bottom: solid rgb(17, 187, 17) 5px;
+  
   position: fixed;
   top: 0;
   display: flex;
