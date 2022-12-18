@@ -3,8 +3,10 @@ let crono=setInterval(cronometro,4000)//Cronometro del slider. Necesario para qu
 //la función cambiaImagenSlider
 
 function cambiaImagenSlider(boton) {
+    getDocumentName()
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono=setInterval(cronometro,4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
+    let sliderId=getSliderId()
     let img = getImgPath()
     let imagenes = ['url(img/sp2.png)','url(img/DeckLogoGold.png)','url(img/DeckLogoMagenta.png)'];
     let colores = ["rgba(0, 102, 255, 0.932)","rgba(255, 0, 0, 0.8)","rgba(255, 102, 0, 0.932)"];
@@ -22,7 +24,7 @@ function cambiaImagenSlider(boton) {
         if (i >= imagenes.length - 1) {
             i = -1
         }
-        document.getElementById("slider").style.backgroundImage = imagenes[i + 1]
+        document.getElementById(sliderId).style.backgroundImage = imagenes[i + 1]
         document.getElementById("sliderLink").style.backgroundColor = colores[i + 1]
         document.getElementById("content").innerHTML=titulos[i+1]
     }
@@ -30,7 +32,7 @@ function cambiaImagenSlider(boton) {
         if (i <= 0) {
             i = imagenes.length
         }
-        document.getElementById("slider").style.backgroundImage = imagenes[i - 1]
+        document.getElementById(sliderId).style.backgroundImage = imagenes[i - 1]
         document.getElementById("sliderLink").style.backgroundColor = colores[i - 1]
         document.getElementById("content").innerHTML=titulos[i-1]
     }
@@ -41,13 +43,32 @@ function cambiaImagenSlider(boton) {
 }
 
 function getImgPath() {
-    let img = document.getElementById('slider');
+    let sliderId=getSliderId()
+    let img = document.getElementById(sliderId);
     let styles = window.getComputedStyle(img);
     img = styles.backgroundImage;
     return img
 }
+function getSliderId(){
+    let sliderId=""
+    if(document.getElementById('slider') !="undefined" && document.getElementById('slider')){
+        sliderId="slider"
+    }
+    if(document.getElementById('sliderTutoriales') !="undefined" && document.getElementById('sliderTutoriales') ){
+        sliderId="sliderTutoriales"
+    }
+    return sliderId
+}
 
-
+/**
+ * Obtiene nombre de la página
+ * @returns nombre de la página
+ */
+function getDocumentName(){
+    let path = window.location.pathname;
+    let pagina = path.split("/").pop()
+    return pagina
+}
  function cronometro() {
     let boton="crono";
     cambiaImagenSlider(boton);

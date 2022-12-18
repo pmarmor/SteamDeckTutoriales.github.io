@@ -1,6 +1,47 @@
+#inicio{
+  border-radius: 5px;
+  color: red;
+  text-shadow: 0 0 5px red;
+  background-color: #ddd;
+}
+/*TUTORIALES*/
 #tituloTutoriales{
       border-bottom: solid rgb(247, 166, 16) 5px;
+      border-bottom: solid rgb(17, 187, 17) 5px;
+      color: white;
 }
 #sliderTutoriales{
-    
+box-shadow: 0 0 15px rgb(0, 0, 0);
+background-color: whitesmoke;
+  border: solid rgb(18, 156, 14) 4px;
 }
+.bodyTutorial{
+    background: linear-gradient(0deg, rgb(13, 59, 58) 13%, rgba(35,97,138,1) 100%);
+}
+.navTutoriales{
+    border: solid rgb(13, 145, 13) 3px;
+    background-color: rgb(14, 199, 14);
+    box-shadow: 0px 0px 20px rgb(255, 166, 0); 
+    text-shadow: 0 0 4px black;
+}
+.navTutoriales li:hover {
+    color: rgb(255, 166, 0);
+    text-shadow: 0 0 5px rgb(255, 166, 0);
+    background-color: #ddd;
+  }
+  #principalTutoriales{
+    border: solid rgb(18, 156, 14) 4px;
+  background-color: whitesmoke;
+  }
+  .navTutoriales li:nth-child(2){
+    border-radius: 5px;
+    color: rgb(255, 166, 0);
+    text-shadow: 0 0 5px rgb(255, 166, 0);
+    background-color: #ddd;
+  }
+  #principalTutoriales section img{
+    border: solid rgb(18, 156, 14) 4px;
+  }
+  #verMasTutoriales{
+    background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
+  }

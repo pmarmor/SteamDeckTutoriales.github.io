@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
- /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
 }
-header + #slider {
-  margin-top: 212px; /*header height 172px*/ 
+
+header + .slider {
+  margin-top: 212px;
+  /*header height 172px*/
 }
+
 header {
   font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
   color: white;
@@ -18,26 +21,31 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: auto;
-  z-index: 2; 
+  max-height: 169px;
+  z-index: 2;
 }
 
-header h1{
+header h1 {
   margin-top: 20px;
   margin-bottom: -20px;
 }
-.spResponsive{
+
+.spResponsive {
   display: flex;
   justify-content: center;
 }
-.spResponsive img{
-margin: 15px 8px;
-margin-bottom: -15px;
+
+.spResponsive img {
+  margin: 15px 8px;
+  margin-bottom: -15px;
 }
-.titulo{
+
+.titulo {
   display: flex;
   justify-content: space-evenly;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -46,64 +54,68 @@ a{
 * Slider
 *
 */
-#slider{
-  border: solid goldenrod 3px;
+.slider {
+  border: solid rgb(247, 166, 16) 4px;
   border-radius: 15px;
-  box-shadow: 0 0 15px goldenrod;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
   background-color: whitesmoke;
+  font-family: FjallaOne;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 40px;
-  height: 27vw ;
-  width: 60% ; 
+  height: 27vw;
+  width: 60%;
   max-height: 400px;
   max-width: 900px;
-  background-size:contain;
+  background-size: contain;
   background-image: url("../img/DeckLogoMagenta.png");
   background-repeat: no-repeat;
   transition: 0.4s;
   background-position: center center;
 }
-#slider a{
-  font-weight: bold;
-  font-family: FjallaOne;
-  font-size:3vw;
-  padding:0 0 0 5px;
+
+.slider a {
+  font-size: 2.3vw;
+  padding: 0 0 0 5px;
   color: unset;
   height: 30%;
   border-radius: 0 0 12px 12px;
   background-color: rgba(255, 102, 0, 0.932);
   transition: 0.4s;
 }
-.content{
+
+.content {
   width: 100%;
   transition: 0.4s;
-  border-radius: 0 0 12px 12px;
-  overflow: hidden;
+
 }
 
-.flechas{
+
+.flechas {
   display: flex;
   justify-content: space-between;
 }
-.flechas img{
+
+.flechas img {
   cursor: pointer;
   transition: 0.4s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
-margin:0 2px;
+  margin: 0 2px;
   background-color: rgba(141, 141, 141, 0.836);
 }
 
-.flechas img:hover{
+.flechas img:hover {
   transform: scale(1.3);
   background-color: rgba(141, 141, 141);
-  transform-origin:center; 
+  transform-origin: center;
 }
+
 .imagenTitulo {
   margin-top: 20px;
 }
+
 .imagenTitulo2 {
   margin-top: 20px;
   -webkit-transform: scaleX(-1);
@@ -113,14 +125,18 @@ margin:0 2px;
 
 body {
   font-family: Archivo;
-  background: linear-gradient(0deg, rgba(66,1,63,1) 10%, rgba(199,0,199,1) 100%);
+  background: linear-gradient(0deg, rgba(66, 1, 63, 1) 10%, rgba(199, 0, 199, 1) 100%);
 }
-.tdiv1,.tdiv2{
+
+.tdiv1,
+.tdiv2 {
   display: none;
 }
-.logo{
+
+.logo {
   display: inline;
 }
+
 nav {
   width: fit-content;
   margin-top: 3%;
@@ -130,7 +146,7 @@ nav {
   border: solid rgb(255, 145, 0) 3px;
   border-radius: 5px;
   background-color: rgb(255, 189, 65);
-  box-shadow: 0px 0px 20px red; 
+  box-shadow: 0px 0px 20px red;
   text-shadow: 0 0 3px black;
 
 }
@@ -148,6 +164,7 @@ nav li {
   margin: auto;
   margin-top: 0%;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 nav li:hover {
@@ -155,9 +172,8 @@ nav li:hover {
   color: red;
   text-shadow: 0 0 5px red;
   background-color: #ddd;
-
- 
 }
+
 
 
 /*
@@ -165,7 +181,7 @@ nav li:hover {
 PRINCIPAL
 *
 */
-.principal{
+.principal {
   border: solid orange 3px;
   background-color: whitesmoke;
   margin: auto;
@@ -173,43 +189,42 @@ PRINCIPAL
   border-radius: 5px;
   box-shadow: 0 0 15px;
   display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
+
 .principal div {
   justify-content: space-around;
   display: flex;
 }
 
-.principal section{
+.principal section {
   margin: auto;
   width: 60%;
   text-align: justify;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 15px;
 }
-.principal section h1{
+
+.principal section h1 {
   font-size: 25px;
   font-family: SecularOne;
   text-align: center;
 }
-.principal img{
+
+.principal img {
   margin: 15px 0;
   width: 100%;
   border: solid rgb(255, 189, 65) 5px;
   border-radius: 5px;
-  
+
 }
-.verMas{
- 
-  background: linear-gradient(0deg, rgba(255,23,203,1) 20%, rgb(255, 106, 223) 76%);
+
+.verMas {
+  background: linear-gradient(0deg, rgba(255, 23, 203, 1) 20%, rgb(255, 106, 223) 76%);
   margin-top: 20px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   font-size: 0.75vw;
   width: 25%;
@@ -218,17 +233,18 @@ grid-row-gap: 0px;
   margin-left: auto;
   transition: 0.15s;
   border: solid black 2px;
+  font-weight:bolder;
 }
 
-.verMas:hover{
-  font-size: 0.8vw;
-  font-weight: bold;
-  background: rgb(255,0,0);
+.verMas:hover {
+  font-size: 0.9vw;
+  font-weight: bolder;
+  background: rgb(255, 0, 0);
   background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
   width: 28%;
-  transition: 0.15s ease-out; 
-  transform:scaleY(1.1); 
-  transform-origin:bottom; 
+  transition: 0.15s ease-out;
+  transform:(1.1);
+  transform-origin:bottom;
   z-index: 1;
 
 }
@@ -243,84 +259,104 @@ grid-row-gap: 0px;
 
 
 @media screen and (max-width: 600px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
+
   body {
     position: relative;
     background-color: rgb(161, 161, 161);
   }
-    header +#slider {
+
+  header+#slider {
     margin-top: 175px;
   }
-  #slider{
 
-    width: 70% ;
-    height: 32vw ;
-   
+  #slider {
+
+    width: 70%;
+    height: 32vw;
+
   }
- .principal {
-    border-top: solid orange 3px; border-right: none;border-left: none; border-bottom: orange;
+
+  .principal {
+    border-top: solid orange 3px;
+    border-right: none;
+    border-left: none;
+    border-bottom: orange;
     width: 100%;
     border-radius: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .principal section{
+
+  .principal section {
     width: 80%;
   }
 
-.tituloDiv img{
+  .tituloDiv img {
     width: 55px;
     margin: 0 10px;
     display: inline;
   }
-  header h1{
+
+  header h1 {
     margin: 0;
   }
-.spResponsive img{
-  height: 30px;
-  width: 30px;
-}
-.spResponsive img:first-child{
-  margin-right: 5px;
-}
-.spResponsive img:last-child{
-  margin-left: 5px;
-}
 
-  .tituloDiv{
+  .spResponsive img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .spResponsive img:first-child {
+    margin-right: 5px;
+  }
+
+  .spResponsive img:last-child {
+    margin-left: 5px;
+  }
+
+  .tituloDiv {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-   .imagenTitulo, .imagenTitulo2{
+  .imagenTitulo,
+  .imagenTitulo2 {
     display: none;
   }
-  nav{
+
+  nav {
     display: flex;
     justify-content: space-evenly;
-    width:fit-content;
+    width: fit-content;
     margin: 10px auto;
   }
+
   nav li {
     padding: 3vw;
   }
-  .headerBR{
+
+  .headerBR {
     display: none;
   }
-  .verMas{
+
+  .verMas {
     transition: 0s;
     font-size: 1.5vw;
     width: 25%;
     display: flex;
     justify-content: center;
   }
-  .verMas:hover{
+
+  .verMas:hover {
     transition: 0s;
-    transform:scaleY(1);
+    transform: scaleY(1);
     font-size: 1.5vw;
     width: 25%;
     display: flex;
@@ -334,13 +370,13 @@ grid-row-gap: 0px;
   font-family: SecularOne;
   src: url(../fuentes/SecularOne-Regular.ttf);
 }
+
 @font-face {
   font-family: FjallaOne;
   src: url(../fuentes/FjallaOne-Regular.ttf);
 }
+
 @font-face {
   font-family: Archivo;
   src: url(../fuentes/Archivo-VariableFont_wdth\,wght.ttf);
 }
-
-
