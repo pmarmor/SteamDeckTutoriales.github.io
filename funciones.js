@@ -7,7 +7,8 @@ function cambiaImagenSlider(boton) {
     crono=setInterval(cronometro,4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     let img = getImgPath()
     let imagenes = ['url(img/sp2.png)','url(img/DeckLogoGold.png)','url(img/DeckLogoMagenta.png)'];
-    let colores = ["rgba(0, 102, 255, 0.932)","rgba(255, 0, 0, 0.7)","rgba(255, 102, 0, 0.932)"];
+    let colores = ["rgba(0, 102, 255, 0.932)","rgba(255, 0, 0, 0.8)","rgba(255, 102, 0, 0.932)"];
+    let titulos=["Bienvenidos a Deck Sp","Mejores ofertas para esta navidad","¿Qué hacer si tu Steam Deck no enciende?"];
     let i = 0;
     imagenes.forEach(elemento => {
         let rutaRelativa=elemento
@@ -22,14 +23,16 @@ function cambiaImagenSlider(boton) {
             i = -1
         }
         document.getElementById("slider").style.backgroundImage = imagenes[i + 1]
-        document.getElementById("content").style.backgroundColor = colores[i + 1]
+        document.getElementById("sliderLink").style.backgroundColor = colores[i + 1]
+        document.getElementById("content").innerHTML=titulos[i+1]
     }
     else {
         if (i <= 0) {
             i = imagenes.length
         }
         document.getElementById("slider").style.backgroundImage = imagenes[i - 1]
-        document.getElementById("content").style.backgroundColor = colores[i - 1]
+        document.getElementById("sliderLink").style.backgroundColor = colores[i - 1]
+        document.getElementById("content").innerHTML=titulos[i-1]
     }
     if(typeof boton.id !="undefined"){
         clearInterval(crono)
