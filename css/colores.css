@@ -29,7 +29,8 @@ background-color: whitesmoke;
     background-color: #ddd;
   }
   #principalTutoriales{
-    border: solid rgb(18, 156, 14) 4px;
+    border-top: solid rgb(18, 156, 14) 4px;
+    border-bottom: solid rgb(18, 156, 14) 4px;
   background-color: whitesmoke;
   }
   .navTutoriales li:nth-child(2){
@@ -82,12 +83,13 @@ background: linear-gradient(0deg, #ff7b00 13%, #8700c5 150%);
 }
 
 #principalNoticias{
-border: solid #f700ff 4px;
+border-top: solid #f700ff 4px;
+border-bottom: solid #f700ff 4px;
 background-color: whitesmoke;
 }
 
-#principalTutoriales section img{
-border: solid rgb(18, 156, 14) 4px;
+#principalNoticias section img{
+border: solid #f700ff  4px;
 }
 #verMasTutoriales{
 background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);

@@ -81,7 +81,7 @@ a {
   padding: 0 0 0 5px;
   color: unset;
   height: 30%;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 11px 11px;
   background-color: rgba(255, 102, 0, 0.932);
   transition: 0.4s;
 }
