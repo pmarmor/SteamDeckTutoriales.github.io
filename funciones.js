@@ -57,6 +57,9 @@ function getSliderId(){
     if(document.getElementById('sliderTutoriales') !="undefined" && document.getElementById('sliderTutoriales') ){
         sliderId="sliderTutoriales"
     }
+    if(document.getElementById('sliderNoticias') !="undefined" && document.getElementById('sliderNoticias') ){
+        sliderId="sliderNoticias"
+    }
     return sliderId
 }
 

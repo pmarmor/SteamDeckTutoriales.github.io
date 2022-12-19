@@ -6,7 +6,6 @@
 }
 /*TUTORIALES*/
 #tituloTutoriales{
-      border-bottom: solid rgb(247, 166, 16) 5px;
       border-bottom: solid rgb(17, 187, 17) 5px;
       color: white;
 }
@@ -16,7 +15,7 @@ background-color: whitesmoke;
   border: solid rgb(18, 156, 14) 4px;
 }
 .bodyTutorial{
-    background: linear-gradient(0deg, rgb(13, 59, 58) 13%, rgba(35,97,138,1) 100%);
+    background: linear-gradient(0deg, #1d6b16 13%, #23618a 150%);
 }
 .navTutoriales{
     border: solid rgb(13, 145, 13) 3px;
@@ -45,3 +44,51 @@ background-color: whitesmoke;
   #verMasTutoriales{
     background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
   }
+  
+/*NOTICIAS*/
+#tituloNoticias{
+  border-bottom: solid #f700ff 5px;
+}
+.navNoticias{
+  border: solid #f700ff 3px;
+  background-color: crimson;
+  box-shadow: 0px 0px 20px orangered; 
+  text-shadow: 0 0 4px black;
+  }
+  .navNoticias li:hover {
+  border-radius: 5px;
+  color: #03b1b1;
+  text-shadow: 0 0 5px cyan;
+  background-color: #ddd;
+  }
+.navNoticias li:nth-child(3){
+  border-radius: 5px;
+  color: orangered;
+  text-shadow: 0 0 5px orangered;
+  background-color: #ddd;
+  }
+#tituloTutoriales{
+  border-bottom: solid rgb(247, 166, 16) 5px;
+  border-bottom: solid rgb(17, 187, 17) 5px;
+  color: white;
+}
+#sliderNoticias{
+box-shadow: 0 0 15px rgb(0, 0, 0);
+background-color: whitesmoke;
+border: solid #f700ff 4px;
+}
+.bodyNoticias{
+background: linear-gradient(0deg, #ff7b00 13%, #8700c5 150%);
+}
+
+#principalNoticias{
+border: solid #f700ff 4px;
+background-color: whitesmoke;
+}
+
+#principalTutoriales section img{
+border: solid rgb(18, 156, 14) 4px;
+}
+#verMasTutoriales{
+background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
+}
