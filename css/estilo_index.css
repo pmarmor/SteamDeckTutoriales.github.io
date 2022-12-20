@@ -77,7 +77,7 @@ a {
 }
 
 .slider a {
-  font-size: 2.3vw;
+  font-size: 3vw;
   padding: 0 0 0 5px;
   color: unset;
   height: 30%;
@@ -121,7 +121,29 @@ a {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
+footer{
+  font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
+  color: white;
+  background-color: rgb(36, 36, 36);
+  margin-top: 15px;
+  border-top: solid rgb(247, 166, 16) 3px;
+  padding: 30px 90px;
+  display: flex;
+}
+footer h2{
+  text-decoration: underline;
+}
+footer ul{
+  list-style-type: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer li{ 
+margin: 10px;
+}
 
 body {
   font-family: Archivo;
@@ -167,10 +189,6 @@ nav li {
   transition: 0.3s;
   cursor: pointer;
 }
-nav a li:nth-child(1){
-
-}
-
 
 nav li:hover {
   border-radius: 5px;
@@ -275,14 +293,14 @@ PRINCIPAL
     background-color: rgb(161, 161, 161);
   }
 
-  header+#slider {
+  header+.slider {
     margin-top: 175px;
   }
 
-  #slider {
+  .slider {
 
-    width: 70%;
-    height: 32vw;
+    width: 87%;
+    height: 39vw;
 
   }
 
@@ -300,6 +318,9 @@ PRINCIPAL
 
   .principal section {
     width: 80%;
+  }
+  .content{
+    font-size: 4.5vw;
   }
 
   .tituloDiv img {
