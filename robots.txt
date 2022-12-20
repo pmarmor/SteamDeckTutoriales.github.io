@@ -1,4 +1,0 @@
-Sitemap: https://your-website-url.github.io/sitemap.xml
-
-User-agent: *
-Disallow:
