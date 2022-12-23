@@ -83,8 +83,7 @@ background: linear-gradient(0deg, #ff7b00 13%, #8700c5 150%);
 }
 
 #principalNoticias{
-border-top: solid #f700ff 4px;
-border-bottom: solid #f700ff 4px;
+border: solid #f700ff 4px;
 background-color: whitesmoke;
 }
 
