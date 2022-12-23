@@ -155,6 +155,7 @@ PRINCIPAL
 
 #main{
   margin: 2% 15% 3% ;
+  font-size: 1.5vw;
   display: flex;
   flex-direction: column;
 }
@@ -171,15 +172,12 @@ PRINCIPAL
   border-radius: 5px;
 margin: auto;
 }
-.principal p{
-  font-size: 1.2vw;
-}
+
 .principal h2{
   font-size: 2.5vw;
   font-family: FjallaOne;
 }
 .principal li{
-  font-size: 1.2vw;
   margin: 0 0 0 20px;
 }
 
@@ -236,18 +234,33 @@ margin: auto;
     margin-top: 175px;
   }
 
-  .principal {
-    border-top: solid orange 3px;
-    border-right: none;
-    border-left: none;
-    border-bottom: orange;
+  #main{
+    font-size: 3vw;
+    margin: 0 30px 30px;
+  }
+  .principal{
     width: 100%;
-    border-radius: 0px;
+  }
+  .principal h1 {
+    font-size: 7vw;
+    font-family: SecularOne;
+    text-align: center;
+  }
+  
+  .principal img {
+    width: 40%;
+    border: solid rgb(255, 189, 65) 5px;
+    border-radius: 5px;
+  margin: auto;
+  }
+  .principal p{
+    font-size: 3vw;
+  }
+  .principal h2{
+    font-size: 5vw;
+    font-family: FjallaOne;
   }
 
-  .principal section {
-    width: 80%;
-  }
 
   .tituloDiv img {
     width: 55px;
@@ -292,24 +305,6 @@ margin: auto;
 
   nav li {
     padding: 3vw;
-  }
-
-  .verMas {
-    transition: 0s;
-    font-size: 1.5vw;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .verMas:hover {
-    transition: 0s;
-    transform: scaleY(1);
-    font-size: 1.5vw;
-    width: 25%;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
   }
 
 }

@@ -29,8 +29,7 @@ background-color: whitesmoke;
     background-color: #ddd;
   }
   #principalTutoriales{
-    border-top: solid rgb(18, 156, 14) 4px;
-    border-bottom: solid rgb(18, 156, 14) 4px;
+    border: solid rgb(18, 156, 14) 4px;
   background-color: whitesmoke;
   }
   .navTutoriales li:nth-child(2){
@@ -83,8 +82,7 @@ background: linear-gradient(0deg, #ff7b00 13%, #8700c5 150%);
 }
 
 #principalNoticias{
-border-top: solid #f700ff 4px;
-border-bottom: solid #f700ff 4px;
+border:solid #f700ff 4px;
 background-color: whitesmoke;
 }
 
@@ -93,4 +91,21 @@ border: solid #f700ff  4px;
 }
 #verMasTutoriales{
 background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
+}
+
+@media screen and (max-width: 600px) {
+
+#principalNoticias{
+  border-top: solid #f700ff 4px;
+border-bottom: solid #f700ff 4px;
+border-left: none;
+border-right: none;
+}
+#principalTutoriales{
+    border-top: solid rgb(18, 156, 14) 4px;
+    border-bottom: solid rgb(18, 156, 14) 4px;
+    border-right: none;
+    border-left: none;
+  background-color: whitesmoke;
+  }
 }

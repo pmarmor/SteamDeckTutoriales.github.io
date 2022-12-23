@@ -371,22 +371,22 @@ PRINCIPAL
 
   .verMas {
     transition: 0s;
-    font-size: 1.5vw;
-    width: 25%;
+    font-size: 3vw;
+    height: 40px;
+    width: 40%;
     display: flex;
     justify-content: center;
   }
 
-  .verMas:hover {
-    transition: 0s;
-    transform: scaleY(1);
-    font-size: 1.5vw;
-    width: 25%;
+ .verMas:hover
+{
+  transition: 0s;
+    font-size: 3vw;
+    height: 40px;
+    width: 40%;
     display: flex;
-    font-weight: bold;
     justify-content: center;
-  }
-
+}
 }
 
 @font-face {
