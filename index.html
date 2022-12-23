@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="Steam Deck tutoriales, Steam Deck tutoriales en español, Noticias Steam Deck, Tutoriales para Steam Deck">
+<meta name="keywords" content="Steam Deck tutoriales, Steam Deck tutoriales en español, Noticias Steam Deck, Tutoriales para Steam Deck, Deck SP, DeckSP">
 <meta name="Googlebot" content="index, archive">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="img/sp2.png">
@@ -12,10 +12,7 @@
 <meta name="description" content="Tutoriales, artículos y noticias para Steam Deck en español.">
 <link rel="stylesheet" href="css/estilo_index.css">
 <link rel="stylesheet" href="css/colores.css">
-<script
-defer 
-src="https://app.embed.im/snow.js"
-></script>
+<script defer src="https://app.embed.im/snow.js" id="snowScript"></script>
 </head>
 
 <body>
@@ -26,15 +23,13 @@ src="https://app.embed.im/snow.js"
 
             <div class="tituloDiv">
                 <img class="tdiv1" src="img/DeckLogoMagenta.png" alt="Steam Deck Logo" width="130">
-                <div style="display: block;"><div class="spResponsive"> <img src="img/sp2.png" alt="" height="35">
+                <div class="spResponsive"> <img src="img/sp2.png" alt="" height="35">
                     <h1>DeckSP</h1>
                     <img src="img/sp2.png" alt="" height="35">
                 </div>
-                <div id="disableSnow"><input type="checkbox" style="margin-top: 20px;"> Deshabilitar nieve</div></div>
 
                 <img class="tdiv2" src="img/DeckLogoMagenta.png" alt="Steam Deck Logo" width="140">
             </div> 
-            <br>
             <nav>
                 <ul>
                     <a href="index.html">
@@ -55,15 +50,14 @@ src="https://app.embed.im/snow.js"
         <img class="imagenTitulo2" src="img/DeckLogoMagenta.png" alt="Steam Deck Logo" width="140">
     </header>
 
-
-        <section id="slider" class="slider">
-            <div><br><br></div>
-            <div class="flechas">
-                <img id="flechaIzquierda" src="img/leftArrow.svg" alt="" onclick="cambiaImagenSlider(this)">
-                <img id="flechaDerecha" src="img/rightArrow.svg" alt="" onclick="cambiaImagenSlider(this)">
-            </div>
-            <a href="" id="sliderLink"><div class="content" id="content">Steam Deck no enciende</div></a>
-        </section>
+    <section id="slider" class="slider">
+        <div><br><br></div>
+        <div class="flechas">
+            <img id="flechaIzquierda" src="img/leftArrow.svg" alt="" onclick="cambiaImagenSlider(this)">
+            <img id="flechaDerecha" src="img/rightArrow.svg" alt="" onclick="cambiaImagenSlider(this)">
+        </div>
+        <a href="" id="sliderLink"><div class="content" id="content">Steam Deck no enciende</div></a>
+    </section>
 
     <section class="principal">
 
@@ -75,12 +69,46 @@ src="https://app.embed.im/snow.js"
             <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
                 disponible
                 el dock oficial de Valve. El dock costará unos</p>
-                <a href="noticias/bienvenida.html"><input type="button" value="VER MÁS" class="verMas"></a>
+            <input type="button" value="VER MÁS" class="verMas">
         </section>
-        
-        <section style="text-align: center; font-size: 30px;">PÁGINA EN DESARROLLO ⚠️⚠️</section>
+        <section>
+            <img src="img/Bienvenida/deckSpBanner.png" width="" height="">
+            <h1>Dock oficial ya disponible</h1>
+            <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
+                disponible el dock oficial de Valve. El dock costará unos</p>
+        </section>
+
+
+        <!-- 
+           -->
+
+        <section>
+            <h1>Dock oficial ya disponible</h1>
+            <br>
+            <img src="img/Bienvenida/deckSpBanner.png" width="" height="">
+            <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
+                disponible
+                el dock oficial de Valve. El dock costará unos</p>
+        </section>
+        <section>
+            <img src="img/Bienvenida/deckSpBanner.png" width="" height="">
+            <h1>Dock oficial ya disponible</h1>
+            <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
+                disponible
+                el dock oficial de Valve. El dock costará unos</p>
+        </section>
+        <section>
+            <img src="img/Bienvenida/deckSpBanner.png" width="" height="">
+            <h1>Dock oficial ya disponible</h1>
+            <p>Ha pasado más de un año desde que Steam Deck se anunció por primera vez y por fin tenemos
+                disponible
+                el dock oficial de Valve. El dock costará unos</p>
+        </section>
+
+
     </section>
 
+    <footer>pie de pagina</footer>
 </body>
 
 <footer>
@@ -99,6 +127,7 @@ src="https://app.embed.im/snow.js"
         </ul>
     </section>
 </footer>
-<script src="js/funciones.js"></script>
+<script defer src="js/funciones.js"></script>
+
 
 </html>
