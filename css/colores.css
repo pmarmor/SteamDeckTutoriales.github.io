@@ -62,7 +62,7 @@ background-color: whitesmoke;
   text-shadow: 0 0 5px cyan;
   background-color: #ddd;
   }
-.navNoticias li:nth-child(3){
+#noticias{
   border-radius: 5px;
   color: orangered;
   text-shadow: 0 0 5px orangered;
@@ -83,11 +83,12 @@ background: linear-gradient(0deg, #ff7b00 13%, #8700c5 150%);
 }
 
 #principalNoticias{
-border: solid #f700ff 4px;
+border-top: solid #f700ff 4px;
+border-bottom: solid #f700ff 4px;
 background-color: whitesmoke;
 }
 
-#principalNoticias section img{
+#principalNoticias img{
 border: solid #f700ff  4px;
 }
 #verMasTutoriales{

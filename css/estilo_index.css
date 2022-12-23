@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: auto;
+  height: 20%;
   max-height: 169px;
   z-index: 2;
 }
@@ -29,7 +29,9 @@ header h1 {
   margin-top: 20px;
   margin-bottom: -20px;
 }
-
+header img :nth-child(1), header image:nth-child(4){
+  width: 120px;
+}
 .spResponsive {
   display: flex;
   justify-content: center;
@@ -161,7 +163,7 @@ background: linear-gradient(0deg, rgb(0, 78, 109) 10%, rgb(0, 60, 95) 100%);
 
 nav {
   width: fit-content;
-  margin-top: 50px;
+  margin-top: 4vh;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -360,7 +362,7 @@ PRINCIPAL
     display: flex;
     justify-content: space-evenly;
     width: fit-content;
-    margin: 10px auto;
+    margin:  7px auto;
   }
 
   nav li {
