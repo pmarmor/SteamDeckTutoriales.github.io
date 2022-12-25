@@ -71,8 +71,7 @@ a {
   width: 60%;
   max-height: 400px;
   max-width: 900px;
-  background-size: contain;
-  background-image: url("../img/sp2.png");
+  background-size:cover;
   background-repeat: no-repeat;
   transition: 0.4s;
   background-position: center center;
@@ -160,8 +159,7 @@ footer img{
 
 body {
   font-family: Archivo;
-/*background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);*/
-background: linear-gradient(0deg, rgb(0, 78, 109) 10%, rgb(0, 60, 95) 100%);
+background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);
 }
 .tdiv1,
 .tdiv2 {

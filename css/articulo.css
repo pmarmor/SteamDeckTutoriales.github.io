@@ -87,12 +87,10 @@ footer ul{
   justify-content: center;
   align-items: center;
 }
-footer li{ 
-margin: 10px;
-}
 
 body {
   font-family: Archivo;
+  font-size: 17px;
 /*background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);*/
 background: linear-gradient(0deg, rgb(0, 78, 109) 10%, rgb(0, 60, 95) 100%);
 }
@@ -157,7 +155,9 @@ PRINCIPAL
   border-radius: 5px;
   box-shadow: 0 0 15px;
 }
-
+.principal li{
+  margin: 10px 0;
+}
 #main{
   margin: 2% 15% 3% ;
   display: flex;
@@ -165,7 +165,7 @@ PRINCIPAL
 }
 
 .principal h1 {
-  font-size: 4vw;
+  font-size: 40px;
   font-family: SecularOne;
   text-align: center;
 }
@@ -178,12 +178,9 @@ margin: auto;
 }
 
 .principal h2{
-  font-size: 2.5vw;
   font-family: FjallaOne;
 }
-.principal li{
-  margin: 0 0 0 20px;
-}
+
 
 .verMas {
   background: linear-gradient(0deg, rgba(255, 23, 203, 1) 20%, rgb(255, 106, 223) 76%);
@@ -246,7 +243,7 @@ margin: auto;
     width: 100%;
   }
   .principal h1 {
-    font-size: 7vw;
+    font-size: 35px;
     font-family: SecularOne;
     text-align: center;
   }

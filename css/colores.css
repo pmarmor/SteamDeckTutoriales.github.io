@@ -1,3 +1,6 @@
+:root {
+--verde:rgb(17, 187, 17);
+}
 #inicio{
   border-radius: 5px;
   color: red;
@@ -5,6 +8,12 @@
   background-color: #ddd;
 }
 /*TUTORIALES*/
+#tutoriales{
+  color: rgb(255, 166, 0);
+  text-shadow: 0 0 5px rgb(255, 166, 0);
+  background-color: #ddd;
+  border-radius: 5px;
+}
 #tituloTutoriales{
       border-bottom: solid rgb(17, 187, 17) 5px;
       color: white;
@@ -29,20 +38,17 @@ background-color: whitesmoke;
     background-color: #ddd;
   }
   #principalTutoriales{
-    border: solid rgb(18, 156, 14) 4px;
+    border: solid var(--verde) 4px;
   background-color: whitesmoke;
   }
-  .navTutoriales li:nth-child(2){
-    border-radius: 5px;
-    color: rgb(255, 166, 0);
-    text-shadow: 0 0 5px rgb(255, 166, 0);
-    background-color: #ddd;
-  }
-  #principalTutoriales section img{
-    border: solid rgb(18, 156, 14) 4px;
+  #principalTutoriales img{
+    border: solid var(--verde) 4px;
   }
   #verMasTutoriales{
     background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
+  }
+  .footerTutoriales{
+    border-top: solid rgb(17, 187, 17) 5px;
   }
   
 /*NOTICIAS*/
@@ -103,12 +109,14 @@ background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%)
 border-bottom: solid #f700ff 4px;
 border-left: none;
 border-right: none;
+border-radius: 0;
 }
 #principalTutoriales{
-    border-top: solid rgb(18, 156, 14) 4px;
-    border-bottom: solid rgb(18, 156, 14) 4px;
+    border-top: solid var(--verde) 4px;
+    border-bottom: solid var(--verde) 4px;
     border-right: none;
     border-left: none;
+    border-radius: 0;
   background-color: whitesmoke;
   }
 }
