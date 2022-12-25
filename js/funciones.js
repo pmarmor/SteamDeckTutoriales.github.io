@@ -12,7 +12,7 @@ function cambiaImagenSlider(boton) {
     let imagenes = ['url(img/DeckLogoGold.png)', 'url(img/DeckLogoMagenta.png)','url(img/sp2.png)'];
     let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)" ];
     let titulos = [ "Mejores ofertas para esta navidad", "¿Qué hacer si tu Steam Deck no enciende?","Bienvenidos a Deck Sp"];
-    let enlaces = [ "", "","noticias/bienvenida.html"];
+    let enlaces = [ "", "noticias/noEnciende/noEnciende.html","noticias/bienvenida.html"];
     let i = 0;
     imagenes.forEach(elemento => {
         let rutaRelativa = elemento
