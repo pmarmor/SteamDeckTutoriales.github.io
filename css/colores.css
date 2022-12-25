@@ -92,6 +92,9 @@ border: solid #f700ff  4px;
 #verMasTutoriales{
 background: linear-gradient(0deg, rgba(18,156,14,1) 17%, rgba(22,196,17,1) 100%);
 }
+.footerNoticias{
+  border-top: solid #f700ff  4px;
+}
 
 @media screen and (max-width: 600px) {
 
