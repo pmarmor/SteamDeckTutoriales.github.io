@@ -1,6 +1,15 @@
 "use strict"
 document.getElementById("content").innerHTML="Bienvenidos a DeckSP"
-document.getElementById("slider").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
+if(getDocumentName()=="index.html")
+{
+    document.getElementById("slider").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
+}
+if(getDocumentName()=="tutoriales.html"){
+    document.getElementById("sliderTutoriales").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
+}
+if(getDocumentName()=="noticias.html"){
+    document.getElementById("sliderNoticias").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
+}
 document.getElementById("sliderLink").href="noticias/bienvenida.html"
 let crono = setInterval(cronometro, 4000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
 //la función cambiaImagenSlider

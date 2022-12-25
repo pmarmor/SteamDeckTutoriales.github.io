@@ -224,8 +224,6 @@ PRINCIPAL
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 .principal div {
@@ -235,18 +233,20 @@ PRINCIPAL
 
 .principal section {
   margin: auto;
-  width: 60%;
+  margin-top: 5px;
+  width: 80%;
+  max-height: 450px;
   text-align: justify;
   padding: 15px;
 }
 
 .principal section h1 {
-  font-size: 25px;
   font-family: SecularOne;
   text-align: center;
 }
 
 .principal img {
+  height:max-content;
   margin: 15px 0;
   width: 100%;
   border: solid rgb(255, 189, 65) 5px;
