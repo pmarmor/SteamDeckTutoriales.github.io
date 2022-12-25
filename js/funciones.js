@@ -19,6 +19,8 @@ function cambiaImagenSlider(boton) {
     crono = setInterval(cronometro, 4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     let sliderId = getSliderId()
     let img = getImgPath()
+    console.log(img)
+    console.log(sliderId)
     let imagenes = ['url(img/bienvenida/deckSpBanner.png)','url(img/DeckLogoGold.png)', 'url(tutoriales/noEnciende/deck2.png)'];
     let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)" ];
     let titulos = [ "Bienvenidos a Deck Sp","Mejores ofertas para esta navidad", "¿Qué hacer si tu Steam Deck no enciende?"];
