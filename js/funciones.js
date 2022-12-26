@@ -101,7 +101,13 @@ function getDocumentName() {
     let path = window.location.pathname;
     
     console.log(path)
-    let pagina = path.split("/").pop()
+    let pagina
+    if(path.includes('/SteamDeckTutoriales.github.io/)')){
+        pagina=/SteamDeckTutoriales.github.io/
+    }
+    else{
+        pagina=path.split("/").pop()
+    }
     console.log(pagina)
     return pagina
 }
