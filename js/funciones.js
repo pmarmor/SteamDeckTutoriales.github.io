@@ -1,19 +1,11 @@
 "use strict"
+let imagenes = ['url(img/Bienvenida/deckSpBanner.png)','url(img/DeckLogoGold.png)', 'url(tutoriales/noEnciende/deck2.png)'];
+let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)" ];
+let titulos = [ "Bienvenidos a Deck Sp","Mejores ofertas para esta navidad", "¿Qué hacer si tu Steam Deck no enciende?"];
+let enlaces = [ "noticias/bienvenida.html",'',"tutoriales/noEnciende/noEnciende.html"];
+let sliderId = getSliderId()
+document.getElementById(sliderId).style.backgroundImage = imagenes[0]
 document.getElementById("content").innerHTML="Bienvenidos a DeckSP"
-if(getDocumentName()=="index.html")
-{
-    document.getElementById("slider").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
-}
-if(getDocumentName()=="/SteamDeckTutoriales.github.io/index.html")
-{
-    document.getElementById("slider").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
-}
-if(getDocumentName()=="tutoriales.html"){
-    document.getElementById("sliderTutoriales").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
-}
-if(getDocumentName()=="noticias.html"){
-    document.getElementById("sliderNoticias").style.backgroundImage="url(img/bienvenida/deckSpBanner.png)"
-}
 document.getElementById("sliderLink").href="noticias/bienvenida.html"
 let crono = setInterval(cronometro, 4000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
 //la función cambiaImagenSlider
@@ -21,13 +13,10 @@ let crono = setInterval(cronometro, 4000)//Cronometro del slider. Necesario para
 function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono = setInterval(cronometro, 4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
-    let sliderId = getSliderId()
+    sliderId = getSliderId()
     let img = getImgPath()
     console.log(img)
-    let imagenes = ['url(img/bienvenida/deckSpBanner.png)','url(img/DeckLogoGold.png)', 'url(tutoriales/noEnciende/deck2.png)'];
-    let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)" ];
-    let titulos = [ "Bienvenidos a Deck Sp","Mejores ofertas para esta navidad", "¿Qué hacer si tu Steam Deck no enciende?"];
-    let enlaces = [ "noticias/bienvenida.html",'',"tutoriales/noEnciende/noEnciende.html"];
+    
     let i = 0;
     imagenes.forEach(elemento => {
         let rutaRelativa = elemento
@@ -102,8 +91,8 @@ function getDocumentName() {
     
     console.log(path)
     let pagina
-    if(path.includes('/SteamDeckTutoriales.github.io/)')){
-        pagina=/SteamDeckTutoriales.github.io/
+    if(path=='/SteamDeckTutoriales.github.io/)'){
+        pagina='/SteamDeckTutoriales.github.io/'
     }
     else{
         pagina=path.split("/").pop()
