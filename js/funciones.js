@@ -14,6 +14,7 @@ function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono = setInterval(cronometro, 4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     sliderId = getSliderId()
+    console.log(sliderId)
     let img = getImgPath()
     console.log(img)
     
@@ -30,15 +31,11 @@ function cambiaImagenSlider(boton) {
         if (i >= imagenes.length - 1) {
             i = -1
         }
-        if (getDocumentName() != "index.html" && getDocumentName() != "noticias.html" && getDocumentName() != "tutoriales.html" && getDocumentName() != "/SteamDeckTutoriales.github.io/index.html") {
+        if (getDocumentName() != "index.html" && getDocumentName() != "noticias.html" && getDocumentName() != "tutoriales.html" && getDocumentName() != "/SteamDeckTutoriales.github.io/") {
             document.getElementById(sliderId).style.backgroundImage = "../" + imagenes[i + 1]
         }
         else { document.getElementById(sliderId).style.backgroundImage = imagenes[i + 1] }
         document.getElementById("sliderLink").style.backgroundColor = colores[i + 1]
-        console.log("--------")
-        console.log(enlaces.length)
-        console.log(i+1)
-        console.log(enlaces[i+1])
         document.getElementById("sliderLink").href = enlaces[i + 1]
         document.getElementById("content").innerHTML = titulos[i + 1]
     }
@@ -47,10 +44,6 @@ function cambiaImagenSlider(boton) {
             i = imagenes.length
         }
         document.getElementById(sliderId).style.backgroundImage = imagenes[i - 1]
-        console.log("--------")
-        console.log(enlaces.length)
-        console.log(i-1)
-        console.log(enlaces[i-1])
         document.getElementById("sliderLink").style.backgroundColor = colores[i - 1]
         document.getElementById("sliderLink").href = enlaces[i - 1]
         document.getElementById("content").innerHTML = titulos[i - 1]
