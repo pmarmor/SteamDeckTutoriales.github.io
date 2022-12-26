@@ -31,10 +31,7 @@ function cambiaImagenSlider(boton) {
         if (i >= imagenes.length - 1) {
             i = -1
         }
-        if (getDocumentName() != "index.html" && getDocumentName() != "noticias.html" && getDocumentName() != "tutoriales.html" && getDocumentName() != "/SteamDeckTutoriales.github.io/") {
-            document.getElementById(sliderId).style.backgroundImage = "../" + imagenes[i + 1]
-        }
-        else { document.getElementById(sliderId).style.backgroundImage = imagenes[i + 1] }
+        document.getElementById(sliderId).style.backgroundImage = imagenes[i + 1]
         document.getElementById("sliderLink").style.backgroundColor = colores[i + 1]
         document.getElementById("sliderLink").href = enlaces[i + 1]
         document.getElementById("content").innerHTML = titulos[i + 1]
