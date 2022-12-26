@@ -99,6 +99,7 @@ function getSliderId() {
 function getDocumentName() {
     let path = window.location.pathname;
     let pagina = path.split("/").pop()
+    console.log(pagina)
     return pagina
 }
 function cronometro() {
