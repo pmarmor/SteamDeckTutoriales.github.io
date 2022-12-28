@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 20%;
+  height: fit-content;
   max-height: 169px;
   z-index: 2;
 }
@@ -120,10 +120,16 @@ a {
 }
 
 .imagenTitulo {
+  height: 8vw;
+  min-height: 100px;
+  max-height: 120px;
   margin-top: 20px;
 }
 
 .imagenTitulo2 {
+  height: 8vw;
+  min-height: 100px;
+  max-height: 120px;
   margin-top: 20px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -306,7 +312,6 @@ PRINCIPAL
   header+.slider {
     margin-top: 175px;
   }
-
   .slider {
 
     width: 87%;
