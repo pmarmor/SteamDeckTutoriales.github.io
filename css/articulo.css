@@ -4,10 +4,15 @@
   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
 }
 
-header + .principal {
+html {
+  scroll-behavior: smooth;
+}
+
+header+.principal {
   margin-top: 212px;
   /*header height 172px*/
 }
+
 
 header {
   font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
@@ -20,7 +25,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 20%;
+  height: fit-content;
   max-height: 169px;
   z-index: 2;
 }
@@ -29,9 +34,12 @@ header h1 {
   margin-top: 20px;
   margin-bottom: -20px;
 }
-header img :nth-child(1), header image:nth-child(4){
+
+header img :nth-child(1),
+header image:nth-child(4) {
   width: 120px;
 }
+
 .spResponsive {
   display: flex;
   justify-content: center;
@@ -51,18 +59,23 @@ a {
   text-decoration: none;
 }
 
-
-
 .imagenTitulo {
+  height: 8vw;
+  min-height: 100px;
+  max-height: 120px;
   margin-top: 20px;
 }
 
 .imagenTitulo2 {
+  height: 8vw;
+  min-height: 100px;
+  max-height: 120px;
   margin-top: 20px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-footer{
+
+footer {
   font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
   color: white;
   background-color: rgb(36, 36, 36);
@@ -73,13 +86,16 @@ footer{
   justify-content: center;
   gap: 50px;
 }
-footer img{
+
+footer img {
   height: 60px;
 }
-footer h2{
+
+footer h2 {
   text-decoration: underline;
 }
-footer ul{
+
+footer ul {
   list-style-type: none;
   margin-top: 10px;
   display: flex;
@@ -91,8 +107,9 @@ footer ul{
 body {
   font-family: Archivo;
   font-size: 17px;
-background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);
+  background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);
 }
+
 .tdiv1,
 .tdiv2 {
   display: none;
@@ -104,7 +121,7 @@ background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100
 
 nav {
   width: fit-content;
-  margin-top: 40px;
+  margin-top: 4vh;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -154,14 +171,34 @@ PRINCIPAL
   border-radius: 5px;
   box-shadow: 0 0 15px;
 }
-.principal li{
+
+.links {
+  padding: 20px 20px 20px 40px;
+  border: solid rgb(130, 130, 130) 3.5px;
+  background-color: rgb(210, 210, 210);
+  width: 50%;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.links ol {
+  margin-left: 20px;
+}
+
+.links h3 {
+  text-decoration: underline;
+}
+
+.principal li {
   margin: 10px 0;
 }
-#main{
-  margin: 2% 15% 3% ;
+
+#main {
+  margin: 2% 15% 3%;
   display: flex;
   flex-direction: column;
 }
+
 
 .principal h1 {
   font-size: 40px;
@@ -170,13 +207,14 @@ PRINCIPAL
 }
 
 .principal img {
-  width: 40%;
   border: solid rgb(255, 189, 65) 5px;
   border-radius: 5px;
-margin: auto;
+  margin: auto;
+  width: 75%;
+  height: 40%;
 }
 
-.principal h2{
+.principal h2 {
   font-family: FjallaOne;
 }
 
@@ -193,7 +231,7 @@ margin: auto;
   margin-left: auto;
   transition: 0.15s;
   border: solid black 2px;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .verMas:hover {
@@ -203,8 +241,8 @@ margin: auto;
   background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
   width: 28%;
   transition: 0.15s ease-out;
-  transform:(1.1);
-  transform-origin:bottom;
+  transform: (1.1);
+  transform-origin: bottom;
   z-index: 1;
 
 }
@@ -234,29 +272,26 @@ margin: auto;
     margin-top: 175px;
   }
 
-  #main{
+  #main {
     font-size: 3vw;
     margin: 0 30px 30px;
   }
-  .principal{
+
+  .principal {
     width: 100%;
   }
+
   .principal h1 {
     font-size: 35px;
     font-family: SecularOne;
     text-align: center;
   }
-  
-  .principal img {
-    width: 40%;
-    border: solid rgb(255, 189, 65) 5px;
-    border-radius: 5px;
-  margin: auto;
-  }
-  .principal p{
+
+  .principal p {
     font-size: 3vw;
   }
-  .principal h2{
+
+  .principal h2 {
     font-size: 5vw;
     font-family: FjallaOne;
   }
