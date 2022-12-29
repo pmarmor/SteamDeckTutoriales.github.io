@@ -1,37 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/index.html</loc>
-  <lastmod>2022-12-25T22:22:02+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/index.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/tutoriales.html</loc>
-  <lastmod>2022-12-25T22:22:02+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/tutoriales.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/noticias.html</loc>
-  <lastmod>2022-12-25T22:22:02+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/noticias.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/noticias/bienvenida.html</loc>
-  <lastmod>2022-12-25T22:22:02+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/noticias/bienvenida.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/tutoriales/noEnciende/noEnciende.html</loc>
-  <lastmod>2022-12-25T22:22:02+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/tutoriales/noEnciende/noEnciende.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://pmarmor.github.io/SteamDeckTutoriales.github.io/noticias/steamReplay/steamReplay.html</loc>
+<lastmod>2022-12-29T03:45:14+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
