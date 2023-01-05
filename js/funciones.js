@@ -7,12 +7,12 @@ let sliderId = getSliderId()
 document.getElementById(sliderId).style.backgroundImage = imagenes[0]
 document.getElementById("content").innerHTML="Bienvenidos a DeckSP"
 document.getElementById("sliderLink").href="noticias/bienvenida.html"
-let crono = setInterval(cronometro, 4000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
+let crono = setInterval(cronometro, 3000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
 //la función cambiaImagenSlider
 
 function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
-    crono = setInterval(cronometro, 4000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
+    crono = setInterval(cronometro, 3000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     sliderId = getSliderId()
     console.log(sliderId)
     let img = getImgPath()
