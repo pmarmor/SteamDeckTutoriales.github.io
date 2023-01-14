@@ -78,8 +78,6 @@ function getSliderId() {
  */
 function getDocumentName() {
     let path = window.location.pathname;
-    
-    console.log(path)
     let pagina
     if(path=='/SteamDeckTutoriales.github.io/)'){
         pagina='/SteamDeckTutoriales.github.io/'
@@ -87,7 +85,6 @@ function getDocumentName() {
     else{
         pagina=path.split("/").pop()
     }
-    console.log(pagina)
     return pagina
 }
 function cronometro() {

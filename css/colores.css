@@ -69,8 +69,8 @@ background-color: whitesmoke;
   }
 #noticias{
   border-radius: 5px;
-  color: orangered;
-  text-shadow: 0 0 5px orangered;
+  color: #03b1b1;
+  text-shadow: 0 0 5px cyan;
   background-color: #ddd;
   }
 #tituloTutoriales{

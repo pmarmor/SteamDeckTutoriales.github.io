@@ -79,13 +79,14 @@ footer {
   font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
   color: white;
   background-color: rgb(36, 36, 36);
-  margin-top: 15px;
+  margin-top: 75px;
   border-top: solid rgb(247, 166, 16) 3px;
   padding: 30px 90px;
   display: flex;
   justify-content: center;
   gap: 50px;
 }
+
 
 footer img {
   height: 60px;
@@ -156,8 +157,6 @@ nav li:hover {
   background-color: #ddd;
 }
 
-
-
 /*
 *
 PRINCIPAL
@@ -191,6 +190,7 @@ PRINCIPAL
 
 .principal li {
   margin: 10px 0;
+  
 }
 
 #main {
@@ -205,13 +205,18 @@ PRINCIPAL
   font-family: SecularOne;
   text-align: center;
 }
-
+.imgLink{
+  margin: auto;
+  width: 50%;
+  height: 40%;
+  max-width: 600px;
+}
 .principal img {
   border: solid rgb(255, 189, 65) 5px;
   border-radius: 5px;
-  margin: auto;
-  width: 75%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
 }
 
 .principal h2 {
@@ -254,7 +259,38 @@ PRINCIPAL
 *
 *
 */
-
+@media screen and (min-width: 2000px) {
+  header+.principal {
+    margin-top: 350px;
+    /*header height 172px*/
+  }
+  .principal{
+    width: 70%;
+    min-height: 1000px;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    gap: 50px;
+  }
+  footer{
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 150px;
+  }
+  footer img{
+    height: 100px;
+  }
+}
 
 @media screen and (max-width: 600px) {
 
