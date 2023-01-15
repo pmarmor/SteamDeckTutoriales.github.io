@@ -73,7 +73,7 @@ background-color: whitesmoke;
   text-shadow: 0 0 5px cyan;
   background-color: #ddd;
   }
-#tituloTutoriales{
+.tituloTutoriales{
   border-bottom: solid rgb(247, 166, 16) 5px;
   border-bottom: solid rgb(17, 187, 17) 5px;
   color: white;

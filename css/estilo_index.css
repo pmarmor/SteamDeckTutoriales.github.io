@@ -83,7 +83,7 @@ a {
   color: unset;
   height: 30%;
   border-radius: 0 0 11px 11px;
-  background-color:rgba(0, 102, 255, 0.932);
+  background-color:#eeff00;
   transition: 0.4s;
 }
 @media screen and (min-width: 1900px) {
@@ -298,7 +298,15 @@ PRINCIPAL
 *
 *
 */
-
+@media screen and (min-width: 2000px) {
+  .principal{
+    height: 1300px;
+    
+  }
+  .principal section {
+    max-height: 1000px;
+  }
+}
 
 @media screen and (max-width: 600px) {
 

@@ -1,12 +1,16 @@
 "use strict"
-let imagenes = ['url(img/Bienvenida/deckSpBanner.png)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)'];
-let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)" ];
-let titulos = [ "Bienvenidos a Deck Sp","Así puedes ver tu resumen del año en Steam", "¿Qué hacer si tu Steam Deck no enciende?"];
-let enlaces = [ "noticias/bienvenida.html",'noticias/steamReplay/steamReplay.html',"tutoriales/noEnciende/noEnciende.html"];
+let imagenes = ['url(img/Bienvenida/deckSpBanner.png)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)','url(tutoriales/shortcuts/shortcuts.jpg)'];
+imagenes=imagenes.reverse()
+let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)","#eeff00" ];
+colores=colores.reverse()
+let titulos = [ "Bienvenidos a Deck Sp","Así puedes ver tu resumen del año en Steam", "¿Qué hacer si tu Steam Deck no enciende?","Todos los atajos de Steam Deck"];
+titulos=titulos.reverse()
+let enlaces = [ "noticias/bienvenida.html",'noticias/steamReplay/steamReplay.html',"tutoriales/noEnciende/noEnciende.html","tutoriales/shortcuts/shortcuts.html"];
+enlaces=enlaces.reverse()
 let sliderId = getSliderId()
 document.getElementById(sliderId).style.backgroundImage = imagenes[0]
-document.getElementById("content").innerHTML="Bienvenidos a DeckSP"
-document.getElementById("sliderLink").href="noticias/bienvenida.html"
+document.getElementById("content").innerHTML=titulos[0]
+document.getElementById("sliderLink").href=enlaces[0]
 let crono = setInterval(cronometro, 3000)//Cronometro del slider. Necesario para que se ejecute por primera vez, ya que luego se reinicia en
 //la función cambiaImagenSlider
 
@@ -14,9 +18,7 @@ function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono = setInterval(cronometro, 3000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
     sliderId = getSliderId()
-    console.log(sliderId)
     let img = getImgPath()
-    console.log(img)
     
     let i = 0;
     imagenes.forEach(elemento => {
