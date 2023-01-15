@@ -1,4 +1,6 @@
 "use strict"
+/*prueba a hacer display flex con las flechas y el slider, osea flIzq-slider-flDer, luego como cuando se usa el top pues aquí busca
+a ver si se puede con left y right y así mueves las flechas hacia dentro del slider*/ 
 let imagenes = ['url(img/Bienvenida/deckSpBanner.png)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)','url(tutoriales/shortcuts/shortcuts.jpg)'];
 imagenes=imagenes.reverse()
 let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)","#eeff00" ];
@@ -17,6 +19,7 @@ let crono = setInterval(cronometro, 3000)//Cronometro del slider. Necesario para
 function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono = setInterval(cronometro, 3000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
+    console.log(boton.id)
     sliderId = getSliderId()
     let img = getImgPath()
     

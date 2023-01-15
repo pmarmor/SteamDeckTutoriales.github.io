@@ -9,7 +9,7 @@ function scrollFunction() {
             posicionAnterior = posicionActual
 
         }
-        else {   //sube     
+        if(posicionAnterior > posicionActual+60) {   //sube     //no aparece hasta que suba 60px
             posicionAnterior = posicionActual
             document.getElementById(headerId).style.transition = 'all 0.4s';
             document.getElementById(headerId).style.marginTop = '0px';
