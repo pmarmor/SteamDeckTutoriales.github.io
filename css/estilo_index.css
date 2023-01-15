@@ -276,6 +276,7 @@ PRINCIPAL
   transition: 0.15s;
   border: solid black 2px;
   font-weight:bolder;
+  cursor: pointer;
 }
 
 .verMas:hover {

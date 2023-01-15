@@ -10,10 +10,11 @@ function scrollFunction() {
 
         }
         else {   //sube     
-            posicionAnterior = posicionActual - 1
+            posicionAnterior = posicionActual
             document.getElementById(headerId).style.marginTop = '0px';
             document.getElementById(headerId).style.transition = 'all 0.6s';
-
+            console.log(posicionAnterior)
+            console.log(posicionActual)
         }
     }
     else {   //vuelve al origen si se ha modificado la resolución   
