@@ -2,7 +2,7 @@ let posicionAnterior = 0
 function scrollFunction() {
     let posicionActual = document.documentElement.scrollTop
     let headerId = getHeaderId();
-    if (screen.width < 600 && posicionActual > 20) {
+    if (screen.width < 600 && posicionActual > 30) {
         if (posicionAnterior < posicionActual) { //baja
             document.getElementById(headerId).style.transition = 'all 0.6s';
             document.getElementById(headerId).style.marginTop = '-200px';
