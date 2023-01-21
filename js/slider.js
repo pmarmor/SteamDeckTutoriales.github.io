@@ -19,7 +19,6 @@ let crono = setInterval(cronometro, 3000)//Cronometro del slider. Necesario para
 function cambiaImagenSlider(boton) {
     clearInterval(crono)//Necesario para eliminar el cronometro de 8 segundos al pulsar una flecha. 
     crono = setInterval(cronometro, 3000)//Volvemos con el valor inicial del cronometro después de borrar el crono de 8 segundos
-    console.log(boton.id)
     sliderId = getSliderId()
     let img = getImgPath()
     
