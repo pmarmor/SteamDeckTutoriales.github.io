@@ -1,5 +1,6 @@
 "use strict"
-let slider=document.getElementById("slider")
+let sliderId = getSliderId()
+let slider=document.getElementById(sliderId)
 slider.onclick = function(event) {
     if(event.target.id!="flechaDerecha" && event.target.id!="flechaIzquierda"){
         window.location.href=document.getElementById("sliderLink").href ; 
@@ -14,7 +15,7 @@ let titulos = [ "Bienvenidos a Deck Sp","Así puedes ver tu resumen del año en 
 titulos=titulos.reverse()
 let enlaces = [ "noticias/bienvenida.html",'noticias/steamReplay/steamReplay.html',"tutoriales/noEnciende/noEnciende.html","tutoriales/shortcuts/shortcuts.html"];
 enlaces=enlaces.reverse()
-let sliderId = getSliderId()
+
 document.getElementById(sliderId).style.backgroundImage = imagenes[0]
 document.getElementById("content").innerHTML=titulos[0]
 document.getElementById("sliderLink").href=enlaces[0]
@@ -27,7 +28,6 @@ function cambiaImagenSlider(boton) {
     console.log(boton.id)
     sliderId = getSliderId()
     let img = getImgPath()
-    
     let i = 0;
     imagenes.forEach(elemento => {
         let rutaRelativa = elemento
