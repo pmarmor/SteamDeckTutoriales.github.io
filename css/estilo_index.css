@@ -240,6 +240,7 @@ PRINCIPAL
 }
 
 .principal section {
+  height: 450px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -248,6 +249,8 @@ PRINCIPAL
   max-height: 450px;
   text-align: justify;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .principal section h1 {
@@ -269,8 +272,9 @@ PRINCIPAL
   margin-top: 20px;
   padding: 8px;
   text-align: center;
-  font-size: 0.75vw;
-  width: 25%;
+  font-size: 13px ;
+  width: 50%;
+  height: 40px;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -281,11 +285,11 @@ PRINCIPAL
 }
 
 .verMas:hover {
-  font-size: 0.9vw;
+  font-size: 16px;
   font-weight: bolder;
   background: rgb(255, 0, 0);
   background: linear-gradient(0deg, rgb(48, 141, 12) 15%, #50e216 81%);
-  width: 28%;
+  width: 55%;
   transition: 0.15s ease-out;
   transform:(1.1);
   transform-origin:bottom;
@@ -414,6 +418,37 @@ PRINCIPAL
     display: flex;
     justify-content: center;
 }
+}
+@media screen and (max-width: 400px) {
+  .principal{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .principal section{
+    width: 80%;
+    border-bottom: solid gray 2px;
+  }
+  .principal section:last-child{
+border-bottom: none;
+  }
+  footer{
+    margin-top: 0;
+  }
+  .slider{
+    height: 200px;
+  }
+  .verMas{
+    font-size: 16px;
+  }
+  .verMas:hover{
+    font-size: 16px;
+  }
+  .flechas img{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    bottom: 10px;
+  }
 }
 
 @font-face {
