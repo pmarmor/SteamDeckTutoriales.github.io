@@ -57,6 +57,7 @@ a {
 *
 */
 .slider {
+  cursor: pointer;
   border: solid rgb(247, 166, 16) 4px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgb(0, 0, 0);
