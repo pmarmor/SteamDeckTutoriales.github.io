@@ -326,6 +326,10 @@ PRINCIPAL
   .principal section {
     max-height: 1000px;
   }
+  nav{
+    position: relative;
+    top: -10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
