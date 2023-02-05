@@ -7,14 +7,14 @@ slider.onclick = function(event) {
         
     }
   };
-let imagenes = ['url(img/Bienvenida/deckSpBanner.png)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)','url(tutoriales/shortcuts/shortcuts.jpg)'];
-imagenes=imagenes.reverse()
+let imagenes = ['url(tutoriales/tecladoBluetooth/tecladoBluetooth.webp)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)','url(tutoriales/shortcuts/shortcuts.jpg)'];
+//imagenes=imagenes.reverse()
 let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)","#eeff00" ];
 colores=colores.reverse()
-let titulos = [ "Bienvenidos a Deck Sp","Así puedes ver tu resumen del año en Steam", "¿Qué hacer si tu Steam Deck no enciende?","Todos los atajos de Steam Deck"];
-titulos=titulos.reverse()
-let enlaces = [ "noticias/bienvenida.html",'noticias/steamReplay/steamReplay.html',"tutoriales/noEnciende/noEnciende.html","tutoriales/shortcuts/shortcuts.html"];
-enlaces=enlaces.reverse()
+let titulos = [ "Cómo conectar un teclado Bluetooth a Steam Deck","Así puedes ver tu resumen del año en Steam", "¿Qué hacer si tu Steam Deck no enciende?","Todos los atajos de Steam Deck"];
+//titulos=titulos.reverse()
+let enlaces = [ "tutoriales/tecladoBluetooth/tecladoBluetooth.html",'noticias/steamReplay/steamReplay.html',"tutoriales/noEnciende/noEnciende.html","tutoriales/shortcuts/shortcuts.html"];
+//enlaces=enlaces.reverse()
 
 document.getElementById(sliderId).style.backgroundImage = imagenes[0]
 document.getElementById("content").innerHTML=titulos[0]
