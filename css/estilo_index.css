@@ -431,8 +431,7 @@ PRINCIPAL
   .verMas:hover {
     transition: 0s;
     font-size: 3vw;
-    height: 40px;
-    width: 40%;
+
     display: flex;
     justify-content: center;
   }
