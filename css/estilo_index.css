@@ -137,7 +137,6 @@ a {
   min-height: 100px;
   max-height: 120px;
   margin-top: 20px;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
@@ -177,6 +176,8 @@ footer img {
 body {
   font-family: Archivo;
   background: linear-gradient(0deg, rgb(109, 0, 103) 10%, rgba(199, 0, 199, 1) 100%);
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 .tdiv1,
@@ -318,7 +319,7 @@ PRINCIPAL
 *
 *
 */
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) { /*4k*/
   .principal {
     height: 1300px;
 
@@ -333,7 +334,7 @@ PRINCIPAL
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {/*Móvil*/
 
   html,
   body {
@@ -344,13 +345,14 @@ PRINCIPAL
     position: relative;
     background-color: rgb(161, 161, 161);
   }
-
+  header h1 {
+    margin: 0;
+  }
   header+.slider {
     margin-top: 175px;
   }
 
   .slider {
-
     width: 87%;
     height: 39vw;
 
