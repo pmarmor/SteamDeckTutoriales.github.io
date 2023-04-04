@@ -30,7 +30,7 @@ header {
   z-index: 2;
 }
 
-header h1 {
+header h2 {
   margin-top: 20px;
   margin-bottom: -20px;
 }
@@ -364,7 +364,7 @@ iframe{
     display: inline;
   }
 
-  header h1 {
+  header h2 {
     margin: 0;
   }
 
