@@ -1,6 +1,7 @@
 "use strict"
 let sliderId = getSliderId()
 let slider=document.getElementById(sliderId)
+
 slider.onclick = function(event) {
     if(event.target.id!="flechaDerecha" && event.target.id!="flechaIzquierda"){
         window.location.href=document.getElementById("sliderLink").href ; 

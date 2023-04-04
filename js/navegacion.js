@@ -5,7 +5,7 @@ function scrollFunction() {
     if (posicionActual > 40) {  //screen.width < 800 &&
         if (posicionAnterior < posicionActual) { //baja
             document.getElementById(headerId).style.transition = 'all 0.6s';
-            document.getElementById(headerId).style.marginTop = '-200px';
+            document.getElementById(headerId).style.marginTop = '-150px';
             posicionAnterior = posicionActual
 
         }

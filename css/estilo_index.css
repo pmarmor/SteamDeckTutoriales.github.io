@@ -26,6 +26,7 @@ header {
 }
 
 header h1 {
+  margin: 0;
   margin-top: 20px;
   margin-bottom: -20px;
 }
@@ -269,7 +270,7 @@ PRINCIPAL
   justify-content: space-between;
 }
 
-.principal section h1 {
+.principal section h2 {
   font-family: SecularOne;
   text-align: center;
 }
@@ -379,10 +380,6 @@ PRINCIPAL
     width: 55px;
     margin: 0 10px;
     display: inline;
-  }
-
-  header h1 {
-    margin: 0;
   }
 
   .spResponsive img {
