@@ -1,7 +1,8 @@
 "use strict"
 let sliderId = getSliderId()
 let slider=document.getElementById(sliderId)
-
+document.getElementById('flechaIzquierda').addEventListener("click",cambiaImagenSlider)
+document.getElementById('flechaDerecha').addEventListener("click",cambiaImagenSlider)
 slider.onclick = function(event) {
     if(event.target.id!="flechaDerecha" && event.target.id!="flechaIzquierda"){
         window.location.href=document.getElementById("sliderLink").href ; 
@@ -101,5 +102,33 @@ function cronometro() {
     let boton = "crono";
     cambiaImagenSlider(boton);
 
-
 } 
+
+/**
+ * Funciones relacionadas con el deslice del dedo
+ * @param {*} e 
+ */
+let levantaDedo=''
+let startX=0
+let startY=0
+slider.addEventListener('touchmove',handleTouchMove)
+slider.addEventListener('touchstart',touchstart)
+slider.addEventListener('touchend',handleTouchEnd)
+
+function touchstart (e){
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+}
+function handleTouchMove(e) {
+    let currentX = e.touches[0].clientX;
+    let finalX = currentX - startX;
+      if (finalX > 0) {
+        levantaDedo='flechaDerecha'
+      } else {
+        levantaDedo='flechaIzquierda'
+      }
+    } 
+
+  function handleTouchEnd(e) {
+ cambiaImagenSlider(levantaDedo)
+  }
