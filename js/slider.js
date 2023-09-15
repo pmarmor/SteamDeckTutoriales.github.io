@@ -3,12 +3,7 @@ let sliderId = getSliderId()
 let slider=document.getElementById(sliderId)
 document.getElementById('flechaIzquierda').addEventListener("click",cambiaImagenSlider)
 document.getElementById('flechaDerecha').addEventListener("click",cambiaImagenSlider)
-slider.onclick = function(event) {
-    if(event.target.id!="flechaDerecha" && event.target.id!="flechaIzquierda"){
-        window.location.href=document.getElementById("sliderLink").href ; 
-        
-    }
-  };
+
 let imagenes = ['url(tutoriales/tecladoBluetooth/tecladoBluetooth.webp)','url(img/slider/resumen.png)', 'url(tutoriales/noEnciende/deck2.png)','url(tutoriales/shortcuts/shortcuts.jpg)'];
 //imagenes=imagenes.reverse()
 let colores = ["rgba(255, 0, 0, 0.8)", "rgba(255, 102, 0, 0.932)","rgba(0, 102, 255, 0.932)","#eeff00" ];
